@@ -1,0 +1,6 @@
+- logs.forEach(function(log) {
+    tr.warn
+        - log.forEach(function(message) {
+            include log
+        - });
+- });
