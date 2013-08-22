@@ -1,6 +1,8 @@
 - logs.forEach(function(log) {
-    tr.warn
-        - log.forEach(function(message) {
+    tr
+        td
+            a.hash(href='#' + log.id, id=log.id)='#'
+        - log.line.forEach(function(message) {
             include log
         - });
 - });

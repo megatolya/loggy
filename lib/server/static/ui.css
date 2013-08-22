@@ -1,0 +1,14 @@
+.current-line
+{
+    background: #fefbed;
+}
+
+.hash
+{
+    color: gray
+}
+
+.current-line .hash
+{
+    color: blue;
+}
