@@ -12,3 +12,9 @@
 {
     color: blue;
 }
+
+input
+{
+    margin: 10px;
+    min-width: 600px;
+}

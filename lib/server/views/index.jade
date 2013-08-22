@@ -9,7 +9,9 @@ head
     script(src='/static/ui.js')
 body
     .container
-        h4=header
-        .logs
-            table.table
+        .row
+            h4=header
+            .logs
+                input.input-lg(type='search', placeholder='regexp or phrase').search
+                table.table
 
