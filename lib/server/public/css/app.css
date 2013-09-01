@@ -1,30 +1,35 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.hover:hover
+{
+    cursor: pointer;
 }
 
-.menu:before {
-  content: "[";
+.clear-input {
+    border: 1px solid #CCC;
+    background: #DDD;
+    z-index: 1;
+    top: 16px;
+    right: 13px;
+    display: block;
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    border-radius: 8px;
+    padding: 0px 6px;
+    color: white;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-size: 12px;
+}
+.clear-input:hover {
+    background: #CCC;
+}
+.clear-input:active {
+    background: #AAA;
 }
 
-.menu:after {
-  content: "]";
+td
+{
+    position: relative;
 }
 
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
