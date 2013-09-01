@@ -2,14 +2,12 @@ h4='{{path}}'
 table.table.table-bordered.table-hover.table-striped.hover
     thead
         tr
-            td
             td='{{i18n.time}}'
             td='{{i18n.module}}'
             td='{{i18n.level}}'
             td='{{i18n.message}}'
     tbody
         tr
-            td
             td
                 input(ng-model='grep.date', type='text', class='form-control')
                 span.clear-input(ng-show='grep.date.length', ng-click='grep.date=""')='x'
@@ -23,8 +21,6 @@ table.table.table-bordered.table-hover.table-striped.hover
                 input.form-control(ng-model='grep.msg', type='text')
                 span.clear-input(ng-show='grep.msg.length', ng-click='grep.msg=""')='x'
         tr(ng-repeat='log in logs | filter:grep:strict  ')
-            td.index
-                a(href='#{{$index}}')='123'
             td.date(ng-click='grep.date = log.date')='{{log.date}}'
             td.module(ng-click='grep.module = log.module')='{{log.module}}'
             td.level(ng-click='grep.level = log.level')
