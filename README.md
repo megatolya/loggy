@@ -17,15 +17,15 @@ Usage
 
 Simply type:
 ```
-$ loggy
+loggy
 ```
 
 Loggy will cache path to log. If you want to start working with another file type:
 ```
-$ loggy new
+loggy new
 ```
 
 To clear cache
 ```
-$ loggy clear
+loggy clear
 ```
