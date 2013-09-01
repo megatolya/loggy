@@ -25,4 +25,4 @@ table.table.table-bordered.table-hover.table-striped.hover
             td.module(ng-click='grep.module = log.module')='{{log.module}}'
             td.level(ng-click='grep.level = log.level')
                 span.label(class='{{log.level | levelClass}}')='{{log.level}}'
-            td.msg(ng-click='grep.msg = log.msg')='{{log.msg.join(" ")}}'
+            td.msg(ng-click='grep.msg = log.msg', inspector, data="{{log.msg}}")
