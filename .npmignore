@@ -1,2 +1,5 @@
-test/
 .DS_Store
+node_modules/
+lib/server/public/bower_components/
+lib/server/public/dist/
+preview.png

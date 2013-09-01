@@ -4,22 +4,24 @@
 }
 
 .clear-input {
+    font-weight: bolder;
     border: 1px solid #CCC;
     background: #DDD;
     z-index: 1;
     top: 16px;
     right: 13px;
     display: block;
-    width: 19px;
+    width: 18px;
     height: 18px;
     position: absolute;
-    border-radius: 8px;
-    padding: 0px 6px;
+    border-radius: 50%;
+    padding: 0px 5px;
     color: white;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     font-size: 12px;
+    line-height: 15px;
 }
 .clear-input:hover {
     background: #CCC;
