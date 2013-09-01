@@ -1,5 +1,6 @@
 loggy
 ===============
+[![Build Status](https://travis-ci.org/megatolya/loggy.png?branch=master)](https://travis-ci.org/megatolya/loggy)
 
 Beautifies your log files in browser and updates page when logs is changed.
 
