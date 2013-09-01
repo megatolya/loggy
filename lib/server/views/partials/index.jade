@@ -1,5 +1,5 @@
 h4='{{path}}'
-table.table.table-bordered.table-hover.table-striped
+table.table.table-bordered.table-hover.table-striped.hover
     thead
         tr
             td='{{i18n.time}}'
@@ -18,11 +18,11 @@ table.table.table-bordered.table-hover.table-striped
                 input(ng-model='grep.level', type='text', class='form-control')
                 span.clear-input(ng-show='grep.level.length', ng-click='grep.level=""')='x'
             td
-                input(ng-model='grep.msg', type='text', class='form-control')
+                input.form-control(ng-model='grep.msg', type='text')
                 span.clear-input(ng-show='grep.msg.length', ng-click='grep.msg=""')='x'
         tr(ng-repeat='log in logs | filter:grep:strict  ')
-            td.date='{{log.date | date:"medium"}}'
-            td.module='{{log.module}}'
-            td.level
-                span.label(ng-click='grep.level = log.level', class='hover {{log.level | levelClass}}')='{{log.level}}'
-            td.msg='{{log.msg.join(" ")}}'
+            td.date(ng-click='grep.date = log.date')='{{log.date}}'
+            td.module(ng-click='grep.module = log.module')='{{log.module}}'
+            td.level(ng-click='grep.level = log.level')
+                span.label(class='{{log.level | levelClass}}')='{{log.level}}'
+            td.msg(ng-click='grep.msg = log.msg')='{{log.msg.join(" ")}}'
