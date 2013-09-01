@@ -1,0 +1,24 @@
+h4='{{path}}'
+table.table.table-bordered.table-hover.table-striped
+    thead
+        tr
+            td='Время'
+            td='Модуль'
+            td='Уровень'
+            td='Сообщение'
+    tbody
+        tr
+            td
+                input(ng-model='grep.date', type='text', class='form-control')
+            td
+                input(ng-model='grep.module', type='text', class='form-control')
+            td
+                input(ng-model='grep.level', type='text', class='form-control')
+            td
+                input(ng-model='grep.msg', type='text', class='form-control')
+        tr(ng-repeat='log in logs | filter:grep:strict  ')
+            td.date='{{log.date | date:"medium"}}'
+            td.module='{{log.module}}'
+            td.level
+                span.label(class='{{log.level | levelClass}}')='{{log.level}}'
+            td.msg='{{log.msg.join(" ")}}'

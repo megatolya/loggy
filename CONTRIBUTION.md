@@ -7,6 +7,20 @@ The maintainer of the project is Anatoliy Ostrovskiy (forgetthisbox@gmail.com).
 
 The project is being developed within community. Maintainer merges pull-requests, fixes critical bugs.
 
+Getting started
+---------------
+
+You need [bower](http://bower.io/) and [grunt-cli](http://gruntjs.com/) to be installed.
+To start development after cloning this repo run:
+```
+npm install && bower install && grunt
+```
+
+To automatically rebuild project's files you can start watcher
+```
+grunt watch
+```
+
 Pull-requests
 -------------
 

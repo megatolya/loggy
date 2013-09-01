@@ -15,11 +15,17 @@ npm install -g node-loggy
 Usage
 -----
 
-It doesn't even work for now but it should looks like:
-
+Simply type:
 ```
-loggy --file ~/.some.log
+$ loggy
 ```
 
-Loggy will automatically point your browser to loggy's web address.
+Loggy will cache path to log. If you want to start working with another file type:
+```
+$ loggy new
+```
 
+To clear cache
+```
+$ loggy clear
+```
