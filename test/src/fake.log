@@ -12,5 +12,5 @@
 2013-12-22 12:22:22	module INFO	helloworld3
 2013-12-22 12:22:22	module DEBUG	helloworld4 helloworld4
 2013-12-22 12:22:22	module WARN	helloworld5
-2013-12-22 12:22:22	module ERROR	[{"helloworld": {"lol":"2"}, "test":{"helloworld": {"lol":"2"}}},{"helloworld": {"lol":"2"}, "test":{"helloworld": {"lol":["2","2"]}}}]
+2013-12-22 12:22:22	module ERROR	{"array":[{"helloworld": {"lol":"2"}, "test":{"helloworld": {"lol":"2"}}},{"helloworld": {"lol":"2"}, "test":{"helloworld": {"lol":["2","2"]}}}], "array2":[{"helloworld": {"lol":"2"}, "test":{"helloworld": {"lol":"2"}}},{"helloworld": {"lol":"2"}, "test":{"helloworld": {"lol":["2","2"]}}}]}
 2013-12-22 12:22:22	module INFO	<b>12</b>
