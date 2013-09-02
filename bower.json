@@ -9,6 +9,7 @@
   "dependencies": {
     "angular": "~1.0.7",
     "angular-socket-io": "~0.0.2",
-    "bootstrap": "~3.0.0"
+    "bootstrap": "~3.0.0",
+    "highlightjs": "~7.3.0"
   }
 }

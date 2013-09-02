@@ -12,6 +12,7 @@ module.exports = function(grunt) {
                 src: [
                     pathToFiles + 'bower_components/angular/angular.js',
                     pathToFiles + 'bower_components/angular-socket-io/socket.js',
+                    pathToFiles + 'bower_components/highlightjs/highlight.pack.js',
                     'lib/server/public/js/app.js',
                     'lib/server/public/js/services.js',
                     'lib/server/public/js/controllers.js',
@@ -22,6 +23,7 @@ module.exports = function(grunt) {
             },
             css: {
                 src: [
+                    pathToFiles + 'bower_components/highlightjs/styles/github.css',
                     pathToFiles + 'bower_components/bootstrap/dist/css/bootstrap.css',
                     pathToFiles + 'css/app.css'
                 ],
