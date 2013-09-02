@@ -3,6 +3,12 @@
     cursor: pointer;
 }
 
+.date,
+.module
+{
+    white-space: nowrap;
+}
+
 .clear-input {
     font-weight: bolder;
     border: 1px solid #CCC;
