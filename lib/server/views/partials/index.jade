@@ -9,17 +9,13 @@ table.table.table-bordered.table-hover.table-striped
     tbody
         tr
             td
-                input(ng-model='grep.date', type='text', class='form-control')
-                span.clear-input(ng-show='grep.date.length', ng-click='grep.date=""')='x'
+                input(type='search', ng-model='grep.date', class='form-control')
             td
                 input(ng-model='grep.module', type='text', class='form-control')
-                span.clear-input(ng-show='grep.module.length', ng-click='grep.module=""')='x'
             td
                 input(ng-model='grep.level', type='text', class='form-control')
-                span.clear-input(ng-show='grep.level.length', ng-click='grep.level=""')='x'
             td
                 input.form-control(ng-model='grep.msg', type='text')
-                span.clear-input(ng-show='grep.msg.length', ng-click='grep.msg=""')='x'
         tr(ng-repeat='log in logs | filter:grep:strict  ')
             td.date.hover(ng-click='grep.date = log.date')='{{log.date}}'
             td.module.hover(ng-click='grep.module = log.module')='{{log.module}}'

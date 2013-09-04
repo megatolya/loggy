@@ -86,3 +86,14 @@ td
     color: gray;
     font-size: 10px;
 }
+
+pre
+{
+    width: 610px;
+    overflow-x: scroll;
+}
+
+pre code
+{
+    width: 2000px;
+}
